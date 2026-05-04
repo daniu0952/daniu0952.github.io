@@ -138,20 +138,52 @@
 
     <!-- 设备判断脚本 -->
     <script>
-        document.getElementById('smartJump').onclick = function() {
-            // 请在此处修改为您真实的推广链接
-            var pcLink = "http://e3te8.com/Re0CbAq"; 
-            var mobileLink = "http://b9ndd.com/VsKJCYj";
+    // 1. 原有的设备判断跳转脚本
+    document.getElementById('smartJump').onclick = function() {
+        var pcLink = "http://e3te8.com/Re0CbAq"; 
+        var mobileLink = "http://b9ndd.com/VsKJCYj";
+        var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 
-            // 检测移动端设备
-            var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        if (isMobile) {
+            window.open(mobileLink, '_blank');
+        } else {
+            window.open(pcLink, '_blank');
+        }
+    };
 
-            if (isMobile) {
-                window.open(mobileLink, '_blank');
-            } else {
-                window.open(pcLink, '_blank');
-            }
-        };
-    </script>
+    // 2. 新增：显示联系卡片函数
+    function showContactCard() {
+        document.getElementById('contactModal').style.display = "block";
+    }
+
+    // 3. 新增：关闭联系卡片函数
+    function closeContactCard() {
+        document.getElementById('contactModal').style.display = "none";
+    }
+
+    // 4. 新增：点击弹窗外部背景关闭
+    window.onclick = function(event) {
+        var modal = document.getElementById('contactModal');
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    // 5. 新增：复制 QQ 号码功能
+    function copyQQ() {
+        var qq = "525477460";
+        var input = document.createElement('input');
+        input.setAttribute('value', qq);
+        document.body.appendChild(input);
+        input.select();
+        try {
+            document.execCommand('copy');
+            alert('QQ号码已成功复制：' + qq);
+        } catch (err) {
+            alert('复制失败，请手动输入');
+        }
+        document.body.removeChild(input);
+    }
+</script>
 </body>
 </html>
