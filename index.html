@@ -19,7 +19,6 @@
         .data-point { font-size: 14px; color: #e67e22; font-weight: 600; }
         .seo-analysis { font-size: 13px; color: #7f8c8d; background: #fcfcfc; padding: 12px; border-radius: 4px; margin-top: 10px; border: 1px solid #f0f0f0; }
         
-        /* 核心按钮样式 */
         .btn-link { display: block; background: #34495e; color: white; padding: 14px; border-radius: 4px; text-decoration: none; font-weight: bold; text-align: center; margin-top: 15px; font-size: 16px; transition: 0.3s; cursor: pointer; border: none; width: 100%; box-sizing: border-box; }
         .btn-link:hover { background: #2c3e50; transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
         .btn-main { background: linear-gradient(135deg, #f1c40f, #e67e22); color: #fff; text-shadow: 0 1px 1px rgba(0,0,0,0.2); }
@@ -37,45 +36,32 @@
     </div>
 
     <div class="content">
-        <!-- 核心数据复盘卡片 -->
         <div class="card">
             <h2>📅 今日（5/04）联赛历史趋势复盘 <span class="tag">数据已更新</span></h2>
-            
             <div class="match-item">
                 <div class="match-category">英超强强对话建模 <span class="tag tag-verify">实战验证完成</span></div>
                 <div class="match-teams">利物浦 v 托特纳姆热刺</div>
                 <div class="data-point">技术指标：前场逼抢强度（PPDA） 8.2</div>
                 <div class="seo-analysis">
-                    <strong>模型摘要：</strong> 在安菲尔德球场的历史模型显示，利物浦在对阵热刺时的高位拦截率高于联赛均值 18%。大数据建模预测，若热刺在后场出球阶段不能有效通过孙兴慜的垂直拉开空间，利物浦在 35-50 分钟的高压波次将产生极高进球期望（xG）。
+                    <strong>模型摘要：</strong> 利物浦在安菲尔德的高位拦截率高于均值 18%，模型预测 35-50 分钟为进球高发期。
                 </div>
             </div>
-
             <div class="match-item">
                 <div class="match-category">意甲技术复盘</div>
                 <div class="match-teams">AC米兰 v 热那亚</div>
                 <div class="data-point">核心建模：横向转移传球成功率 91%</div>
                 <div class="seo-analysis">
-                    <strong>技术简报：</strong> 米兰近期在圣西罗球场的防守转换速度有所放缓。模型检测到热那亚在面对联赛前四球队时的反击效率处于 B+ 级，预测本场比赛米兰的边路套上幅度将受到战术限制以防反击。
+                    <strong>技术简报：</strong> 模型检测到热那亚反击效率处于 B+ 级，预测米兰边路套上将受限。
                 </div>
             </div>
-
             <p style="font-size: 11px; color: #bbb; margin-top: 15px; text-align: center;">※ 以上内容仅为科研复盘数据，不具有指导性意义</p>
         </div>
 
-        <!-- 方案A + 智能脚本引导卡片 -->
         <div class="card" style="border: 2px solid #f1c40f; background: #fffdf5;">
             <div style="position: absolute; top: -12px; right: 20px; background: #f1c40f; color: #fff; padding: 2px 10px; border-radius: 20px; font-size: 12px; font-weight: bold;">官方推荐</div>
             <h2>📈 数据实战校验入口</h2>
-            <p style="font-size: 14px; color: #555; margin-bottom: 10px;">
-                本实验室已将 <b>2026 全球赛事建模数据库</b> 与 <b>开云体育 (KY SPORTS)</b> 完成逻辑对标。
-            </p>
-            <p style="font-size: 13px; color: #e67e22; font-weight: bold;">
-                > 建议玩家在实战过程中参考本中心提供的“进球期望值”进行博弈评估，更多福利联系客服领取。
-            </p>
-            
-            <!-- 自动识别设备的跳转按钮 -->
+            <p style="font-size: 14px; color: #555; margin-bottom: 10px;">实验室已将 <b>2026 建模数据库</b> 与 <b>开云体育 (KY SPORTS)</b> 完成逻辑对标。</p>
             <button id="smartJump" class="btn-link btn-main">进入开云体育实战校验 (数据同步)</button>
-            
             <div style="margin-top: 15px; display: flex; justify-content: space-around; opacity: 0.6;">
                 <img src="https://img.icons8.com/color/48/visa.png" width="30" alt="Visa">
                 <img src="https://img.icons8.com/color/48/mastercard.png" width="30" alt="MasterCard">
@@ -83,29 +69,23 @@
             </div>
         </div>
 
-
-        <!-- 技术小组联系卡片：客服矩阵版 -->
         <div class="card" style="border-top: 4px solid #34495e;">
             <h2>🤝 申请加入技术研究小组</h2>
-            <p style="font-size: 14px; color: #555;">如需获取更详尽的<b>全球联赛历史数据周报</b>或<b>欧战半决赛临场博弈报告</b>，请通过以下渠道联系技术值班员。</p>
+            <p style="font-size: 14px; color: #555;">如需获取更详尽的数据周报，请联系技术值班员。</p>
             
-            <!-- Telegram 联系方式 -->
             <a href="https://t.me/xiaotong54" class="btn-link" target="_blank" style="background: #24A1DE; margin-bottom: 10px;">
                 Telegram 官方交流群 (海外实时)
             </a>
 
-            <!-- QQ 联系按钮 -->
             <button class="btn-link" onclick="showContactCard()" style="background: #12B7F5; width: 100%; border: none; cursor: pointer; color: white; font-weight: bold; padding: 14px; border-radius: 4px; font-size: 16px;">
                 QQ：525477460 (点击领取福利)
             </button>
 
-            <!-- 隐藏的联系名片弹窗 -->
+            <!-- 联系名片弹窗 -->
             <div id="contactModal" style="display:none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); backdrop-filter: blur(3px);">
                 <div style="background-color: #fff; margin: 10% auto; padding: 25px; border-radius: 20px; width: 340px; text-align: center; position: relative; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 1px solid #eee;">
-                    <!-- 关闭按钮 -->
                     <span onclick="closeContactCard()" style="position: absolute; right: 20px; top: 15px; cursor: pointer; font-size: 24px; color: #ccc;">&times;</span>
                     
-                    <!-- 头像：已替换为 ./image.png -->
                     <div style="width: 100px; height: 100px; background: #f0f2f5; border-radius: 50%; margin: 0 auto 15px; overflow: hidden; border: 4px solid #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
                         <img src="./image.png" style="width: 100%; height: 100%; object-fit: cover;" alt="客服头像">
                     </div>
@@ -115,71 +95,45 @@
                     
                     <div style="text-align: left; font-size: 14px; color: #333; line-height: 1.6; background: #f8fbff; padding: 18px; border-radius: 12px; border-left: 4px solid #12B7F5; margin-bottom: 20px;">
                         <p style="margin: 0;"><strong>业务范畴：</strong></p>
-                        开云集团9台 ! 欢迎SEO/推广团队/做站/频道资源量大伙人前来咨询，安排福利QQ联系：<span style="color: #f39c12; font-weight: bold; font-size: 16px;">525477460</span>
+                        开云集团9台招商，量大优先，QQ联系：<span style="color: #f39c12; font-weight: bold; font-size: 16px;">525477460</span>
                     </div>
 
-             <!-- 功能按钮部分：已去重优化 -->
-<div style="display: flex; flex-direction: column; gap: 10px;">
-    <!-- 1. 跳转 QQ 聊天按钮 -->
-    <a href="mqqwpa://im/chat?chat_type=wpa&uin=525477460&version=1&src_type=web&web_src=oicqzone.com" target="_blank" style="background: #12B7F5; color: white; text-decoration: none; padding: 12px; border-radius: 25px; font-weight: bold; font-size: 14px; transition: 0.3s; display: block;">
-        立即 QQ 聊天
-    </a>
-
-    <!-- 2. 复制 QQ 号码按钮 -->
-    <button onclick="copyQQ()" style="background: white; color: #12B7F5; border: 1px solid #12B7F5; padding: 10px; border-radius: 25px; font-weight: bold; font-size: 14px; cursor: pointer; width: 100%;">
-        复制 QQ 号码
-    </button>
-</div>
-                        
+                    <!-- 优化后的功能按钮区域 -->
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <a href="mqqwpa://im/chat?chat_type=wpa&uin=525477460&version=1&src_type=web&web_src=oicqzone.com" target="_blank" style="background: #12B7F5; color: white; text-decoration: none; padding: 12px; border-radius: 25px; font-weight: bold; font-size: 14px; transition: 0.3s; display: block;">
+                            立即 QQ 聊天
+                        </a>
+                        <button onclick="copyQQ()" style="background: white; color: #12B7F5; border: 1px solid #12B7F5; padding: 10px; border-radius: 25px; font-weight: bold; font-size: 14px; cursor: pointer; width: 100%;">
+                            复制 QQ 号码
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <p style="font-size: 12px; color: #7f8c8d; text-align: center; margin-top: 10px;">
-                工作时间：13:00 - 02:00 (GMT+8) | 咨询人数较多请耐心等待
-            </p>
+            <p style="font-size: 12px; color: #7f8c8d; text-align: center; margin-top: 10px;">工作时间：13:00 - 02:00 (GMT+8)</p>
         </div>
 
         <div class="footer">
-            <p><strong>学术声明：</strong> 本站（daniu0952.github.io）为基于 GitHub Pages 的纯技术静态演示站点。我们利用大数据抓取技术进行足球运动学的数据复盘研究。本站严格遵守法律法规，不提供、不链接至任何形式的非法博彩平台。用户在第三方平台的操作行为与本研究中心无关。</p>
+            <p><strong>学术声明：</strong> 本站为纯技术静态演示站点。本研究中心与第三方平台操作无关。</p>
             <p>© 2026 Global Sports Data Lab.</p>
         </div>
     </div>
 
-    <!-- JavaScript 脚本 -->
     <script>
-        // 1. 设备判断跳转脚本
         document.getElementById('smartJump').onclick = function() {
-            var pcLink = "http://e3te8.com/Re0CbAq"; 
-            var mobileLink = "http://b9ndd.com/VsKJCYj";
+            var pcLink = "http://e3te8.com/Re0CbAq", mobileLink = "http://b9ndd.com/VsKJCYj";
             var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-            if (isMobile) {
-                window.open(mobileLink, '_blank');
-            } else {
-                window.open(pcLink, '_blank');
-            }
+            window.open(isMobile ? mobileLink : pcLink, '_blank');
         };
 
-        // 2. 显示联系卡片函数
-        function showContactCard() {
-            document.getElementById('contactModal').style.display = "block";
-        }
-
-        // 3. 关闭联系卡片函数
-        function closeContactCard() {
-            document.getElementById('contactModal').style.display = "none";
-        }
-
-        // 4. 点击弹窗外部背景关闭
+        function showContactCard() { document.getElementById('contactModal').style.display = "block"; }
+        function closeContactCard() { document.getElementById('contactModal').style.display = "none"; }
+        
         window.onclick = function(event) {
             var modal = document.getElementById('contactModal');
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
+            if (event.target == modal) modal.style.display = "none";
         }
 
-        // 5. 复制 QQ 号码功能
         function copyQQ() {
             var qq = "525477460";
             var input = document.createElement('input');
