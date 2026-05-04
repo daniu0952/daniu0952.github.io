@@ -120,8 +120,17 @@
 
                     <!-- 功能按钮 -->
                     <div style="display: flex; flex-direction: column; gap: 10px;">
-                        <a href="https://t.me/xiaotong54" target="_blank" style="background: #24A1DE; color: white; text-decoration: none; padding: 12px; border-radius: 25px; font-weight: bold; font-size: 14px; transition: 0.3s; display: block;">SEND MESSAGE (TG)</a>
-                        <button onclick="copyQQ()" style="background: white; color: #12B7F5; border: 1px solid #12B7F5; padding: 10px; border-radius: 25px; font-weight: bold; font-size: 14px; cursor: pointer; width: 100%;">复制 QQ 号码</button>
+                        <!-- 功能按钮修改后 -->
+<div style="display: flex; flex-direction: column; gap: 10px;">
+    <!-- 这里改成了跳转 QQ -->
+    <a href="mqqwpa://im/chat?chat_type=wpa&uin=525477460&version=1&src_type=web&web_src=oicqzone.com" style="background: #12B7F5; color: white; text-decoration: none; padding: 12px; border-radius: 25px; font-weight: bold; font-size: 14px; transition: 0.3s; display: block;">
+        立即 QQ 聊天
+    </a>
+    <button onclick="copyQQ()" style="background: white; color: #12B7F5; border: 1px solid #12B7F5; padding: 10px; border-radius: 25px; font-weight: bold; font-size: 14px; cursor: pointer; width: 100%;">
+        复制 QQ 号码
+    </button>
+</div>
+                        
                     </div>
                 </div>
             </div>
