@@ -101,7 +101,49 @@
 
             <p style="font-size: 11px; color: #bbb; margin-top: 15px; text-align: center;">※ 以上内容仅为科研复盘数据，不具有指导性意义</p>
         </div>
+<!-- 在现有的 5 条赛事卡片下方，增加一个“加载更多”区域 -->
+<div id="more-matches" style="display: none;">
+    <!-- 往期复盘内容 1 -->
+    <div class="match-item">
+        <div class="match-category">欧冠半决赛复盘 <span class="tag">历史数据</span></div>
+        <div class="match-teams">多特蒙德 v 巴黎圣日耳曼</div>
+        <div class="data-point">建模结果：低控球率下的防守反击效率极高</div>
+        <div class="seo-analysis">
+            <strong>复盘摘要：</strong> 针对 2026-05 期间的欧战建模显示，多特蒙德在主场的防守位移极佳。
+        </div>
+    </div>
 
+    <!-- 往期复盘内容 2 -->
+    <div class="match-item">
+        <div class="match-category">英超焦点复盘</div>
+        <div class="match-teams">阿森纳 v 伯恩茅斯</div>
+        <div class="data-point">核心指标：阵地战渗透率 78%</div>
+        <div class="seo-analysis">
+            <strong>复盘摘要：</strong> 基于历史趋势分析，阿森纳在处理弱队低位防守时具备稳定的数据模型表现。
+        </div>
+    </div>
+</div>
+
+<!-- 更多赛事复盘按钮 -->
+<button id="loadMoreBtn" class="btn-link" style="background: #ecf0f1; color: #34495e; border: 1px solid #bdc3c7; margin-top: 10px;">
+    查看更多往期赛事复盘 (历史数据)
+</button>
+
+<script>
+    // 控制显示/隐藏往期内容的脚本
+    document.getElementById('loadMoreBtn').onclick = function() {
+        var moreContent = document.getElementById('more-matches');
+        if (moreContent.style.display === "none") {
+            moreContent.style.display = "block";
+            this.innerText = "收起往期复盘内容";
+            // 滚动到新内容
+            moreContent.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            moreContent.style.display = "none";
+            this.innerText = "查看更多往期赛事复盘 (历史数据)";
+        }
+    };
+</script>
         <!-- 转换入口卡片 -->
         <div class="card" style="border: 2px solid #f1c40f; background: #fffdf5;">
             <div style="position: absolute; top: -12px; right: 20px; background: #f1c40f; color: #fff; padding: 2px 10px; border-radius: 20px; font-size: 12px; font-weight: bold;">官方推荐</div>
